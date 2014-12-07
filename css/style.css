@@ -1,60 +1,3 @@
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1.15;
-  letter-spacing: 1px;
-   font-family: 'Roboto', sans-serif; /* apply to whole doc */
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* End of Reset */
-
-/* Trick to control borders and body */
-
-
-/*div {
-    border: 1px solid Chocolate;
-}*/
-
 /* Start of Custom Styles */
 
 div {
@@ -71,60 +14,42 @@ body {
   padding: 0px;
 }
 
-.content-footer,
+a {
+  /*Typography Declarations */
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFCF33;
+}
+
+a:hover {
+    /*Typography Declarations */
+    color: #FFE799;
+}
+
+.masthead,
+.introduction,
+.location,
+.questions,
+.content-footer {
+  /* Layout Declarations */
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.content-footer > p,
 .masthead-heading,
-.masthead-intro{
+.masthead-intro,
+.social {
   text-align: center;
 }
 
-.masthead{
-  padding: 8em 0;
-  background-image: url('../images/ocean_aboutme.jpg');
-  width: 100%;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: solid 1em #000066;
-  background-position: center top;
-  overflow: auto;
-}
-
-.masthead-intro{
-  /* Layout Declarations */
-  margin: 0.1em;
-  /* Typography Declarations */
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 2em;
-}
-.masthead-heading{
-  /* Layout Declarations */
-  margin: 0.0em;
-  /* Typography Declarations */
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  text-transform: uppercase;
-}
-
-.content-footer,
-.introduction-section,
-.location-section,
-.questions-section{
+.introduction,
+.location,
+.questions{
   max-width: 38em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
+  margin: 0 auto; 
 }
 
-.social > li {
-  display: inline-block;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  padding: 0.2em;
-}
-.content-footer > p {
-  color: white;
-}
 .introduction > p,
 .location > p,
 .content-footer > p {
@@ -133,33 +58,101 @@ body {
   letter-spacing: 0.05em;
 }
 
-.questions-section > h2 {
-  /* Typography Declaration */
-  font-family: "Gentium Book Basic", georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #1537FF;
-  /* Layout */
-  margin: 2em 0 1em 0;
+.masthead{
+  /* Layout Declarations */
+  padding: 8em 0;
+  /* Appearance Declarations */
+  background-image: url('../images/ocean_aboutme.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: solid 1em #000066;
+  /* background-position: center top;
+  overflow: auto; 
+  width: 100%;
+  margin: 0 auto; */
 }
 
-.section > h1 {
+.masthead-intro{
+  /* Layout Declarations */
+  margin-bottom: 0.1em;
+  /* Typography Declarations */
+  color: #FFFFFF;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading{
+  /* Layout Declarations */
+  margin-top: -0.2em;
+  /* Typography Declarations */
+  color: #FFF1C2;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.02;
+  font-size: 6em;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 0px #FFCF33;
+}
+
+.heading {
+  /* Layout Declarations */
+  max-width: 19em;
   margin-top: 2em;
 }
 
-.footer-background{
-  width:100%;
-  background-color: #11A8FF;
-  margin: 0 auto;
-  
+.question {
+  /* Layout Declarations */
+  margin: 2em 0 1em 0;
+  /* Typography Declaration */
+  color: #1537FF;
+  font-family: "Gentium Book Basic", georgia, serif;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-.content-footer{
-  width: 100%;
-  padding: 10px 0;
+.answer {
+  /* Layout Declarations */
+  margin-left: 0em;
+}
+
+.content-footer {
+  /* Layout Declarations */
+  margin-top: 5em;
+  padding: 4em 0;
+  /* Apperance Rules */
+  background-color: #594F49;
+}
+
+.content-footer > p {
+  /* Typography Declarations */
+  color: white;
+}
+
+.social {
+  /* Layout Declarations */
+  padding: 0;
+  /* Appearance Declarations */
+  list-style: none;
 }
 
 .social > li {
-  line-height: 2em;
+  /* Layout Declarations */
+  display: inline-block;
+  margin-right: 1em;
 }
+
+@media only screen and (max-width: 700px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
+
+
+
+
+
 
